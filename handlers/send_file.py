@@ -1,7 +1,6 @@
 # Updated By @MrAbhi2k3
 
 import asyncio
-import requests
 import string
 import random
 from configs import Config

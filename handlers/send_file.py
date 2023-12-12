@@ -13,12 +13,11 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, ForceRepl
 
 
 
-async def reply_forward(message: Message, file_id: int):
-    await bot.edit_message_reply_markup(message.chat.id, file.id,
+async def reply_forward(message: Message, file_id,
     reply_markup==InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("",
+                        InlineKeyboardButton("𝖴𝗉𝖽𝖺𝗍𝖾𝗌",
                                              url="https://t.me/Dr_Stone_New_World_English_Dub")
                     ],
                     [

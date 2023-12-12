@@ -83,7 +83,7 @@ async def start(bot: Client, cmd: Message):
                     ],
                     [
                         InlineKeyboardButton("Bots Channel", url="https://t.me/Rokubotz"),
-                        InlineKeyboardButton(" Support Group", url="https://t.me/Rokubotz")
+                        InlineKeyboardButton(" Support Group", url="https://t.me/Team_Roku")
                     ]
                 ]
             )
@@ -362,7 +362,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                         InlineKeyboardButton("Close 🚪", callback_data="closeMessage")
                     ],
                     [
-                        InlineKeyboardButton("Support", url="https://t.me/Roofiverse"),
+                        InlineKeyboardButton("Support", url="https://t.me/Team_Roku"),
                         InlineKeyboardButton("Bots Channel", url="https://t.me/Rokubotz")
                     ]
                 ]
@@ -411,7 +411,7 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Support", url="https://t.me/Roofiverse"),
+                        InlineKeyboardButton("Support", url="https://t.me/Team_Roku"),
                         InlineKeyboardButton("Bots Channel", url="https://t.me/Rokubotz")
                     ],
                     [

@@ -31,30 +31,24 @@ Send Me any Media or File. I can Work In Channel too. Add Me to Channel with Edi
 │
 ├🔹 **Hosted On:** [Heroku](https://heroku.com)
 │
-├🔸 **Developer:** [Snowball](https://t.me/Snowball_Official) 
+├🔸 **Developer:** [Waifu](https://t.me/waifu4ur) 
 │
-├🔹 **Bot Support:** [Support](https://t.me/Roofiverse)
+├🔹 **Bot Support:** [Support](https://t.me/Team_Roku)
 │
 ├🔸 **Bot Updates:** [Bots Channel](https://t.me/Rokubotz)
 │
 ╰──────[ 😎 ]───────────⍟
 """
 	ABOUT_DEV_TEXT = f"""
-🧑🏻‍💻 **𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿:** [Snowball](https://github.com/Snowball-0)
+🧑🏻‍💻 **𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿:** [Waifu](https://t.me/waifu4ur)
  
  I am Super noob Please Support My Hard Work.
 
-[Donate Me](https://t.me/Snowball_Official) or ```Snowball_Official```
+[Donate Me](https://t.me/waifu4ur)
 """
 	HOME_TEXT = """
-Hello, [{}](tg://user?id={})\n\nThis is a Permanent **FileStore Bot**.
-
-How to Use Bot & it's Benefits??
-
-📢 Sᴇɴᴅ ᴍᴇ ᴀɴʏ ғɪʟᴇ, I ᴡɪʟʟ sᴛᴏʀᴇ ɪᴛ ɪɴ ᴍʏ Dᴀᴛᴀʙᴀsᴇ ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ɢɪᴠᴇ ʏᴏᴜʀ sʜᴀʀᴇʙʟᴇ ʟɪɴᴋ ᴛᴏ ᴀᴄᴄᴇss ᴛʜᴀᴛ ғɪʟᴇ.
-
-
-🚀 Powered By @Roofiverse
+Hello, [{}](tg://user?id={})\n\nɪ ᴀᴍ ғɪʟᴇ sᴛᴏʀᴇ ʙᴏᴛ ᴏғ @waifu4ur
+ᴛᴏ ᴜsᴇ ᴍᴇ ʏᴏᴜ ᴊᴜsᴛ ʜᴀᴠᴇ ᴛᴏ sɪᴍᴘʟɪғʏ sᴇɴᴅ ᴍᴇ ᴛʜᴇ ғɪʟᴇ & ɪ'ʟʟ ᴄᴏɴᴠᴇʀᴛ ɪᴛ ɪɴᴛᴏ ʟɪɴᴋ
 
 """
 	

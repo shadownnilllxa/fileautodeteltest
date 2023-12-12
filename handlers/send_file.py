@@ -13,7 +13,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, ForceRepl
 
 
 
-async def reply_forward(message: Message, file_id,)
+async def reply_markup(message: Message, file_id,)
     reply_markup=InlineKeyboardMarkup(
                 [
                     [

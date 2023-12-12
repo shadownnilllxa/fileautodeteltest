@@ -25,8 +25,9 @@ async def reply_forward(message: Message, file_id,
                         InlineKeyboardButton("⚡ 𝖤𝗑𝗉𝗅𝗈𝗋𝖾", callback_data="gotohome")
                     ]
                 ]
-            )
-        
+            ) 
+         )
+
     except FloodWait as e:
         await asyncio.sleep(e.x)
         await reply_forward(message, file_id)

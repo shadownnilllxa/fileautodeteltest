@@ -22,9 +22,16 @@ async def reply_forward(message: Message, file_id: int):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("♻️ 𝖬𝖺𝗂𝗇 𝖢𝗁𝖺𝗇𝗇𝖾𝗅 ♻️", url="https://t.me/silvervoidmovie"),
-                        InlineKeyboardButton("💠 𝖮𝗇𝗀𝗈𝗂𝗇𝗀 𝖠𝗇𝗂𝗆𝖾 💠", url="https://t.me/FzAnime"),
-                        InlineKeyboardButton("🔞 Hen Channel 🔞", url="https://t.me/Haniflix")
+                        InlineKeyboardButton("♻️ 𝖬𝖺𝗂𝗇 𝖢𝗁𝖺𝗇𝗇𝖾𝗅 ♻️", url="https://t.me/silvervoidmovie")
+                    ],
+                    [
+                        InlineKeyboardButton("💠 𝖮𝗇𝗀𝗈𝗂𝗇𝗀 𝖠𝗇𝗂𝗆𝖾 💠", url="https://t.me/FZAnime"),
+                        InlineKeyboardButton("🔞 𝖧𝖾𝗇𝗍𝖺𝗂 𝖢𝗁𝖺𝗇𝗇𝖾𝗅 🔞", url="https://t.me/Haniflix/"),
+                        InlineKeyboardButton("", callback_data="closeMessage")
+                    ],
+                    [
+                        InlineKeyboardButton("", url="https://t.me/TeleRoidGroup"),
+                        InlineKeyboardButton("Close", callback_data="closeMessage")
                     ]
                 ]
             )

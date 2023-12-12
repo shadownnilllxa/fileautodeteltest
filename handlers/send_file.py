@@ -30,7 +30,8 @@ async def reply_forward(message: Message, file_id: int):
                     ]
                 ]
             )
-    
+       )
+
     try:
         await message.reply_text(
             f"Files will be deleted in 30 minutes to avoid copyright issues. Please forward and save them.",

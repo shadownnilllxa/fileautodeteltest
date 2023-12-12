@@ -1,6 +1,7 @@
 # Updated By @MrAbhi2k3
 
 import asyncio
+import requests
 import string
 import random
 from configs import Config
@@ -14,25 +15,23 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, ForceRepl
 
 
 async def reply_forward(message: Message, file_id: int):
-    reply_markup=InlineKeyboardMarkup(
+    try:
+        await message.reply_text(
+            disable_web_page_preview=True,
+            quote=True,
+            reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("𝖬𝖺𝗂𝗇 𝖢𝗁𝖺𝗇𝗇𝖾𝗅", url="https://t.me/silvervoidmovie")
+                        InlineKeyboardButton("",
+                                             url="https://t.me/Dr_Stone_New_World_English_Dub")
                     ],
                     [
-                        InlineKeyboardButton("", callback_data="aboutbot"),
-                        InlineKeyboardButton("", callback_data="aboutdevs"),
-                        InlineKeyboardButton("", callback_data="closeMessage")
-                    ],
-                    [
-                        InlineKeyboardButton("𝖡𝗈𝗍𝗌 𝖢𝗁𝖺𝗇𝗇𝖾𝗅", url="https://t.me/Rokubotz"),
-                        InlineKeyboardButton(" 𝖲𝗎𝗉𝗉𝗈𝗋𝗍 𝖦𝗋𝗈𝗎𝗉", url="https://t.me/Team_Roku")
+                        InlineKeyboardButton("⛅ 𝖴𝗉𝖽𝖺𝗍𝖾𝗌", url="https://t.me/Dr_Stone_New_World_English_Dub"),
+                        InlineKeyboardButton("⚡ 𝖤𝗑𝗉𝗅𝗈𝗋𝖾", callback_data="gotohome")
                     ]
                 ]
             )
-       )
-
-            
+        )
     except FloodWait as e:
         await asyncio.sleep(e.x)
         await reply_forward(message, file_id)
@@ -58,4 +57,3 @@ async def send_media_and_reply(bot: Client, user_id: int, file_id: int):
 async def delete_after_delay(message, delay):
     await asyncio.sleep(delay)
     await message.delete()
-    

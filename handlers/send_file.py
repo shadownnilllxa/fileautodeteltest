@@ -13,20 +13,25 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, ForceRepl
 
 
 
-async def reply_markup(message: Message, file_id,):
-    reply_markup=InlineKeyboardMarkup(
+async def reply_forward(message: Message, file_id: int):
+    try:
+        await message.reply_text(
+            f"Files will be deleted in 30 minutes to avoid copyright issues. Please forward and save them.",
+            disable_web_page_preview=True,
+            quote=True,
+            reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("𝖴𝗉𝖽𝖺𝗍𝖾𝗌",
+                        InlineKeyboardButton("♻️ 𝖬𝖺𝗂𝗇 𝖢𝗁𝖺𝗇𝗇𝖾𝗅 ♻️",
                                              url="https://t.me/Dr_Stone_New_World_English_Dub")
                     ],
                     [
                         InlineKeyboardButton("⛅ 𝖴𝗉𝖽𝖺𝗍𝖾𝗌", url="https://t.me/Dr_Stone_New_World_English_Dub"),
-                        InlineKeyboardButton("⚡ 𝖤𝗑𝗉𝗅𝗈𝗋𝖾", callback_data="gotohome")
+                        InlineKeyboardButton("🤖 𝖡𝗈𝗍𝗌 𝖢𝗁𝖺𝗇𝗇𝖾𝗅", callback_data="gotohome")
                     ]
                 ]
-            ) 
-
+            )
+        )
     except FloodWait as e:
         await asyncio.sleep(e.x)
         await reply_forward(message, file_id)
@@ -47,7 +52,7 @@ async def media_forward(bot: Client, user_id: int, file_id: int):
 async def send_media_and_reply(bot: Client, user_id: int, file_id: int):
     sent_message = await media_forward(bot, user_id, file_id)
     await reply_forward(message=sent_message, file_id=file_id)
-    asyncio.create_task(delete_after_delay(sent_message, 1800))
+    asyncio.create_task(delete_after_delay(sent_message, 3600))
 
 async def delete_after_delay(message, delay):
     await asyncio.sleep(delay)

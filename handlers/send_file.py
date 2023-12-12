@@ -14,7 +14,6 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, ForceRepl
 
 
 async def reply_forward(message: Message, file_id: int):
-    await bot.edit_message_reply_markup(message.chat.id, message.id,
     reply_markup=InlineKeyboardMarkup(
                 [
                     [

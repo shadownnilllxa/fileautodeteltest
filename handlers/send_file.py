@@ -23,11 +23,11 @@ async def reply_forward(message: Message, file_id: int):
                 [
                     [
                         InlineKeyboardButton("♻️ 𝖬𝖺𝗂𝗇 𝖢𝗁𝖺𝗇𝗇𝖾𝗅 ♻️",
-                                             url="https://t.me/Dr_Stone_New_World_English_Dub")
+                                             url="https://t.me/silvervoidmovie")
                     ],
                     [
-                        InlineKeyboardButton("⛅ 𝖴𝗉𝖽𝖺𝗍𝖾𝗌", url="https://t.me/Dr_Stone_New_World_English_Dub"),
-                        InlineKeyboardButton("🤖 𝖡𝗈𝗍𝗌 𝖢𝗁𝖺𝗇𝗇𝖾𝗅", callback_data="gotohome")
+                        InlineKeyboardButton("💠 𝖮𝗇𝗀𝗈𝗂𝗇𝗀 𝖠𝗇𝗂𝗆𝖾 💠", url="https://t.me/FzAnime"),
+                        InlineKeyboardButton("🔞 Hentai Channel 🔞, url="https://t.me/Haniflix")
                     ]
                 ]
             )

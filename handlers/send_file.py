@@ -15,23 +15,22 @@ async def reply_forward(message: Message, file_id: int):
             f"Files will be deleted in 30 minutes to avoid copyright issues. Please forward and save them.",
             disable_web_page_preview=True,
             quote=True,
-            reply_markup=InlineKeyboardMarkup("", url="")
+        reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton("𝖬𝖺𝗂𝗇 𝖢𝗁𝖺𝗇𝗇𝖾𝗅", url="https://t.me/silvervoidmovie")
                     ],
                     [
-                        InlineKeyboardButton("𝖬𝖺𝗂𝗇 𝖢𝗁𝖺𝗇𝗇𝖾𝗅", callback_data="aboutbot"),
-                        InlineKeyboardButton("𝖮𝗇𝗀𝗈𝗂𝗇𝗀 𝖠𝗇𝗂𝗆𝖾", callback_data="aboutdevs"),
+                        InlineKeyboardButton("𝖮𝗇𝗀𝗈𝗂𝗇𝗀 𝖠𝗇𝗂𝗆𝖾", url="https://t.me/FZAnime"),
+                        InlineKeyboardButton("𝖧𝖾𝗇𝗍𝖺𝗂 𝖢𝗁𝖺𝗇𝗇𝖾𝗅", url="https://t.me/Haniflix"),
                         InlineKeyboardButton("", callback_data="closeMessage")
                     ],
                     [
-                        InlineKeyboardButton("𝖧𝖾𝗇𝗍𝖺𝗂 𝖢𝗁𝖺𝗇𝗇𝖾𝗅", url=""),
-                        InlineKeyboardButton("𝖡𝗈𝗍𝗌 𝖢𝗁𝖺𝗇𝗇𝖾𝗅", url="")
-                    ],  
-                    [
-                        InlineKeyboardButton("Close", callback_data="closeMessage")
+                        InlineKeyboardButton("𝖡𝗈𝗍𝗌 𝖢𝗁𝖺𝗇𝗇𝖾𝗅", url="https://t.me/Rokubotz"),
+                        InlineKeyboardButton("", url="")
                     ]
-                 ]
+                ]
              )
-        )
         
     except FloodWait as e:
         await asyncio.sleep(e.x)

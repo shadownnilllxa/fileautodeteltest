@@ -34,6 +34,7 @@ async def reply_forward(message: Message, file_id: int):
                     ]
                  ]
              )
+        )
         
     except FloodWait as e:
         await asyncio.sleep(e.x)

@@ -14,11 +14,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, ForceRepl
 
 
 
-async def reply_forward(message: Message, file_id: int):
-
-    except FloodWait as e:
-        await asyncio.sleep(e.x)
-        await reply_forward(message, file_id)
+async def reply_forward(message: Message, file_id: int)
 
 async def media_forward(bot: Client, user_id: int, file_id: int):
     try:

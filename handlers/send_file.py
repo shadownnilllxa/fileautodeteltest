@@ -28,13 +28,12 @@ async def reply_forward(message: Message, file_id: int):
                     [
                         InlineKeyboardButton("𝖧𝖾𝗇𝗍𝖺𝗂 𝖢𝗁𝖺𝗇𝗇𝖾𝗅", url=""),
                         InlineKeyboardButton("𝖡𝗈𝗍𝗌 𝖢𝗁𝖺𝗇𝗇𝖾𝗅", url="")
-                        
+                    ],  
                     [
                         InlineKeyboardButton("Close", callback_data="closeMessage")
-                    ],
-                    [
-                ]
-        )
+                    ]
+                 ]
+             )
         
     except FloodWait as e:
         await asyncio.sleep(e.x)

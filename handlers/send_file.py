@@ -15,28 +15,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, ForceRepl
 
 
 async def reply_forward(message: Message, file_id: int):
-    try:
-        await message.reply_text(
-            f"",
-            disable_web_page_preview=True,
-            quote=True,
-            reply_markup=InlineKeyboardMarkup(
-                [
-                    [
-                        InlineKeyboardButton("", url="https://t.me/Low_Mb_Zone")
-                    ],
-                    [
-                        InlineKeyboardButton("", url="https://t.me/FZAnime"),
-                        InlineKeyboardButton("", url="https://t.me/Low_Mb_Hanime"),
-                        InlineKeyboardButton("", callback_data="closeMessage")
-                    ],
-                    [
-                        InlineKeyboardButton("", url="https://t.me/Rokubotz"),
-                        InlineKeyboardButton("", callback_data="closeMessage")
-                    ]
-                ]
-            )
-        )
+
     except FloodWait as e:
         await asyncio.sleep(e.x)
         await reply_forward(message, file_id)
@@ -57,6 +36,23 @@ async def media_forward(bot: Client, user_id: int, file_id: int):
 async def send_media_and_reply(bot: Client, user_id: int, file_id: int):
     sent_message = await media_forward(bot, user_id, file_id)
     await reply_forward(message=sent_message, file_id=file_id)
+reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton("𝖬𝖺𝗂𝗇 𝖢𝗁𝖺𝗇𝗇𝖾𝗅", url="https://t.me/silvervoidmovie")
+                    ],
+                    [
+                        InlineKeyboardButton("𝖮𝗇𝗀𝗈𝗂𝗇𝗀 𝖠𝗇𝗂𝗆𝖾", url="https://t.me/FZAnime"),
+                        InlineKeyboardButton("𝖧𝖾𝗇𝗍𝖺𝗂 𝖢𝗁𝖺𝗇𝗇𝖾𝗅", url="https://t.me/Haniflix"),
+                        InlineKeyboardButton("", callback_data="closeMessage")
+                    ],
+                    [
+                        InlineKeyboardButton("𝖡𝗈𝗍𝗌 𝖢𝗁𝖺𝗇𝗇𝖾𝗅", url="https://t.me/Rokubotz"),
+                        InlineKeyboardButton("", url="")
+                    ]
+                ]
+           )
+       )
 
 async def delete_after_delay(message, delay):
     await asyncio.sleep(delay)

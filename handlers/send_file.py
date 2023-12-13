@@ -32,7 +32,7 @@ async def reply_forward(message: Message, file_id: int):
                     ],
                     [
                         InlineKeyboardButton("𝖡𝗈𝗍𝗌 𝖢𝗁𝖺𝗇𝗇𝖾𝗅", url="https://t.me/Rokubotz"),
-                        InlineKeyboardButton("", url="")
+                        InlineKeyboardButton("𝖢𝗅𝗈𝗌𝖾", callback_data="closeMessage")
                     ]
                 ]
             )

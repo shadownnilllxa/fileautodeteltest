@@ -21,7 +21,7 @@ async def reply_forward(message: Message, file_id: int):
 
         # Send the message with the inline button
         await message.reply_message(
-            f"",
+            f"reply_forward(message: Message, file_id: int):",
             disable_web_page_preview=True,
             quote=True,
             reply_markup=reply_markup

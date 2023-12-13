@@ -10,29 +10,32 @@ from pyrogram.errors import FloodWait
 from handlers.helpers import str_to_b64
 
 async def reply_forward(message: Message, file_id: int):
-    InlineKeyboardMarkup(
-                [
-                    [
-                        InlineKeyboardButton("BotsList Channel", url="https://t.me/TGRobot_List")
-                    ],
-                    [
-                        InlineKeyboardButton("About Bot", callback_data="aboutbot"),
-                        InlineKeyboardButton("About Dev", callback_data="aboutdevs"),
-                        InlineKeyboardButton("Close 🚪", callback_data="closeMessage")
-                    ],
-                    [
-                        InlineKeyboardButton("Bots Channel", url="https://t.me/TeleRoidGroup"),
-                        InlineKeyboardButton(" Support Group", url="https://t.me/TeleRoid14")
-                    ]
-                ]
-            )
-
     try:
         await message.reply_text(
-            f"message: Message, file_id: int.",
+            f"Files will be deleted in 30 minutes to avoid copyright issues. Please forward and save them.",
             disable_web_page_preview=True,
             quote=True
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton("", url="")
+                    ],
+                    [
+                        InlineKeyboardButton("𝖬𝖺𝗂𝗇 𝖢𝗁𝖺𝗇𝗇𝖾𝗅", callback_data="aboutbot"),
+                        InlineKeyboardButton("𝖮𝗇𝗀𝗈𝗂𝗇𝗀 𝖠𝗇𝗂𝗆𝖾", callback_data="aboutdevs"),
+                        InlineKeyboardButton("", callback_data="closeMessage")
+                    ],
+                    [
+                        InlineKeyboardButton("𝖧𝖾𝗇𝗍𝖺𝗂 𝖢𝗁𝖺𝗇𝗇𝖾𝗅", url=""),
+                        InlineKeyboardButton("𝖡𝗈𝗍𝗌 𝖢𝗁𝖺𝗇𝗇𝖾𝗅", url="")
+                        
+                    [
+                        InlineKeyboardButton("Close", callback_data="closeMessage")
+                    ],
+                    [
+                ]
         )
+        
     except FloodWait as e:
         await asyncio.sleep(e.x)
         await reply_forward(message, file_id)
@@ -42,43 +45,9 @@ async def media_forward(bot: Client, user_id: int, file_id: int):
         if Config.FORWARD_AS_COPY is True:
             return await bot.copy_message(chat_id=user_id, from_chat_id=Config.DB_CHANNEL,
                                           message_id=file_id)
-            reply_markup=InlineKeyboardMarkup(
-                [
-                    [
-                        InlineKeyboardButton("BotsList Channel", url="https://t.me/TGRobot_List")
-                    ],
-                    [
-                        InlineKeyboardButton("About Bot", callback_data="aboutbot"),
-                        InlineKeyboardButton("About Dev", callback_data="aboutdevs"),
-                        InlineKeyboardButton("Close 🚪", callback_data="closeMessage")
-                    ],
-                    [
-                        InlineKeyboardButton("Bots Channel", url="https://t.me/TeleRoidGroup"),
-                        InlineKeyboardButton(" Support Group", url="https://t.me/TeleRoid14")
-                    ]
-                ]
-            )
-                                        
         elif Config.FORWARD_AS_COPY is False:
             return await bot.forward_messages(chat_id=user_id, from_chat_id=Config.DB_CHANNEL,
                                               message_ids=file_id)
-            reply_markup=InlineKeyboardMarkup(
-                [
-                    [
-                        InlineKeyboardButton("BotsList Channel", url="https://t.me/TGRobot_List")
-                    ],
-                    [
-                        InlineKeyboardButton("About Bot", callback_data="aboutbot"),
-                        InlineKeyboardButton("About Dev", callback_data="aboutdevs"),
-                        InlineKeyboardButton("Close 🚪", callback_data="closeMessage")
-                    ],
-                    [
-                        InlineKeyboardButton("Bots Channel", url="https://t.me/TeleRoidGroup"),
-                        InlineKeyboardButton(" Support Group", url="https://t.me/TeleRoid14")
-                    ]
-                ]
-            )
-            
     except FloodWait as e:
         await asyncio.sleep(e.value)
         return media_forward(bot, user_id, file_id)

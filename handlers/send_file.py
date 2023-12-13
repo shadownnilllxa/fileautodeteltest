@@ -20,7 +20,7 @@ async def reply_forward(message: Message, file_id: int):
         reply_markup = InlineKeyboardMarkup([[button]])
 
         # Send the message with the inline button
-        await message.reply_markup(
+        await message.reply_message(
             f"",
             disable_web_page_preview=True,
             quote=True,

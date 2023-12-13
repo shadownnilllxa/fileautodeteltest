@@ -10,6 +10,24 @@ from pyrogram.errors import FloodWait
 from handlers.helpers import str_to_b64
 
 async def reply_forward(message: Message, file_id: int):
+    InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton("BotsList Channel", url="https://t.me/TGRobot_List")
+                    ],
+                    [
+                        InlineKeyboardButton("About Bot", callback_data="aboutbot"),
+                        InlineKeyboardButton("About Dev", callback_data="aboutdevs"),
+                        InlineKeyboardButton("Close 🚪", callback_data="closeMessage")
+                    ],
+                    [
+                        InlineKeyboardButton("Bots Channel", url="https://t.me/TeleRoidGroup"),
+                        InlineKeyboardButton(" Support Group", url="https://t.me/TeleRoid14")
+                    ]
+                ]
+            )
+         )
+
     try:
         await message.reply_text(
             f"message: Message, file_id: int.",

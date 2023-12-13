@@ -52,7 +52,6 @@ reply_markup=InlineKeyboardMarkup(
                     ]
                 ]
            )
-       )
 
 async def delete_after_delay(message, delay):
     await asyncio.sleep(delay)

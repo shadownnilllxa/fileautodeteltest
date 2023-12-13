@@ -20,8 +20,8 @@ async def reply_forward(message: Message, file_id: int):
         reply_markup = InlineKeyboardMarkup([[button]])
 
         # Send the message with the inline button
-        await message.reply_text(
-            f"Files will be deleted in 30 minutes to avoid copyright issues. Please forward and save them.",
+        await message.reply_markup(
+            f"",
             disable_web_page_preview=True,
             quote=True,
             reply_markup=reply_markup

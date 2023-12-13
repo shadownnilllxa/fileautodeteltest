@@ -15,7 +15,7 @@ async def reply_forward(message: Message, file_id: int):
             f"Files will be deleted in 30 minutes to avoid copyright issues. Please forward and save them.",
             disable_web_page_preview=True,
             quote=True,
-            reply_markup=InlineKeyboardMarkup(
+            reply_text=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton("𝖬𝖺𝗂𝗇 𝖢𝗁𝖺𝗇𝗇𝖾𝗅", url="https://t.me/silvervoidmovie")

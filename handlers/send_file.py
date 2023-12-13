@@ -13,12 +13,6 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, ForceRepl
 
 
 
-async def reply_forward(message: Message, file_id: int):
-    try:
-        await message.reply_text(
-            disable_web_page_preview=True,
-            quote=True
-        )
     except FloodWait as e:
         await asyncio.sleep(e.x)
         await reply_forward(message, file_id)

@@ -1,6 +1,7 @@
 # Updated By @MrAbhi2k3
 
 import asyncio
+import requests
 import string
 import random
 from configs import Config
@@ -14,8 +15,8 @@ async def reply_forward(message: Message, file_id: int):
         await message.reply_text(
             f"Files will be deleted in 30 minutes to avoid copyright issues. Please forward and save them.",
             disable_web_page_preview=True,
-            quote=True
-        reply_markup=InlineKeyboardMarkup(
+         quote=True
+            reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton("𝖬𝖺𝗂𝗇 𝖢𝗁𝖺𝗇𝗇𝖾𝗅", url="https://t.me/silvervoidmovie")
@@ -29,9 +30,8 @@ async def reply_forward(message: Message, file_id: int):
                         InlineKeyboardButton("𝖡𝗈𝗍𝗌 𝖢𝗁𝖺𝗇𝗇𝖾𝗅", url="https://t.me/Rokubotz"),
                         InlineKeyboardButton("", url="")
                     ]
-                ]
-             )
-        
+               ]
+        )
     except FloodWait as e:
         await asyncio.sleep(e.x)
         await reply_forward(message, file_id)

@@ -26,7 +26,6 @@ async def reply_forward(message: Message, file_id: int):
                     ]
                 ]
             )
-         )
 
     try:
         await message.reply_text(

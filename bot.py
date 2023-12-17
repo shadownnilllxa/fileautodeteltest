@@ -157,20 +157,20 @@ async def main(bot: Client, message: Message):
                                                        reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("𝖬𝖺𝗂𝗇 𝖢𝗁𝖺𝗇𝗇𝖾𝗅", url="https://t.me/silvervoidmovie")
+                        InlineKeyboardButton("", url="https://t.me/silvervoidmovie")
                     ],
                     [
-                        InlineKeyboardButton("𝖮𝗇𝗀𝗈𝗂𝗇𝗀 𝖠𝗇𝗂𝗆𝖾", url="https://t.me/FZAnime"),
-                        InlineKeyboardButton("𝖧𝖾𝗇𝗍𝖺𝗂 𝖢𝗁𝖺𝗇𝗇𝖾𝗅", url="https://t.me/Haniflix"),
+                        InlineKeyboardButton("𝖢𝗋𝗎𝗇𝖼𝗁𝗒𝖫𝗂𝗍𝖾", url="https://t.me/CrunchyLite"),
+                        InlineKeyboardButton("𝖧𝖺𝗇𝗂𝖥𝗅𝗂𝗑", url="https://t.me/Haniflix"),
                         InlineKeyboardButton("", callback_data="closeMessage")
                     ],
                     [
-                        InlineKeyboardButton("𝖡𝗈𝗍𝗌 𝖢𝗁𝖺𝗇𝗇𝖾𝗅", url="https://t.me/Rokubotz"),
+                        InlineKeyboardButton("", url="https://t.me/Rokubotz"),
                         InlineKeyboardButton("", url="")
                     ]
                 ]
-             )                                              
-   
+             )
+          )
             if message.chat.username:
                 await forwarded_msg.reply_text(
                     f"#CHANNEL_BUTTON:\n\n[{message.chat.title}](https://t.me/{message.chat.username}/{CH_edit.id}) Channel's Broadcasted File's Button Added!")

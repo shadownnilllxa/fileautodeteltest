@@ -160,8 +160,8 @@ async def main(bot: Client, message: Message):
                         InlineKeyboardButton("", url="https://t.me/silvervoidmovie")
                     ],
                     [
-                        InlineKeyboardButton("𝖢𝗋𝗎𝗇𝖼𝗁𝗒𝖫𝗂𝗍𝖾", url="https://t.me/CrunchyLite"),
-                        InlineKeyboardButton("𝖧𝖺𝗇𝗂𝖥𝗅𝗂𝗑", url="https://t.me/Haniflix"),
+                        InlineKeyboardButton("🌧 𝖢𝗋𝗎𝗇𝖼𝗁𝗒𝖫𝗂𝗍𝖾", url="https://t.me/CrunchyLite"),
+                        InlineKeyboardButton("⚡️ 𝖧𝖺𝗇𝗂𝖥𝗅𝗂𝗑", url="https://t.me/Haniflix"),
                         InlineKeyboardButton("", callback_data="closeMessage")
                     ],
                     [

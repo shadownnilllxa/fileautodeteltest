@@ -154,8 +154,23 @@ async def main(bot: Client, message: Message):
             file_er_id = str(forwarded_msg.id)
             share_link = f"https://t.me/{Config.BOT_USERNAME}?start=PredatorHackerzZ_{str_to_b64(file_er_id)}"
             CH_edit = await bot.edit_message_reply_markup(message.chat.id, message.id,
-                                                          reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(
-                                                              "Get Sharable Link", url=share_link)]]))
+                                                       reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton("𝖬𝖺𝗂𝗇 𝖢𝗁𝖺𝗇𝗇𝖾𝗅", url="https://t.me/silvervoidmovie")
+                    ],
+                    [
+                        InlineKeyboardButton("𝖮𝗇𝗀𝗈𝗂𝗇𝗀 𝖠𝗇𝗂𝗆𝖾", url="https://t.me/FZAnime"),
+                        InlineKeyboardButton("𝖧𝖾𝗇𝗍𝖺𝗂 𝖢𝗁𝖺𝗇𝗇𝖾𝗅", url="https://t.me/Haniflix"),
+                        InlineKeyboardButton("", callback_data="closeMessage")
+                    ],
+                    [
+                        InlineKeyboardButton("𝖡𝗈𝗍𝗌 𝖢𝗁𝖺𝗇𝗇𝖾𝗅", url="https://t.me/Rokubotz"),
+                        InlineKeyboardButton("", url="")
+                    ]
+                ]
+             )                                              
+   
             if message.chat.username:
                 await forwarded_msg.reply_text(
                     f"#CHANNEL_BUTTON:\n\n[{message.chat.title}](https://t.me/{message.chat.username}/{CH_edit.id}) Channel's Broadcasted File's Button Added!")

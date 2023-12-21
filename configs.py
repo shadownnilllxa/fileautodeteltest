@@ -1,6 +1,6 @@
 # (c) @PredatorHackerzZ || @TeleRoidGroup
 
-import os.environ
+import os
 
 class Config(object):
 	API_ID = int(os.environ.get("API_ID", "0"))

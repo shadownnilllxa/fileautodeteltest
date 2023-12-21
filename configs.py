@@ -7,7 +7,7 @@ class Config(object):
 	API_HASH=("")
 	BOT_TOKEN=("")
 	BOT_USERNAME=("")
-	DB_CHANNEL =int("")
+	DB_CHANNEL = int("")
 	SHORTLINK_URL = os.environ.get('SHORTLINK_URL')
 	SHORTLINK_API = os.environ.get('SHORTLINK_API')
 	BOT_OWNER = int("")

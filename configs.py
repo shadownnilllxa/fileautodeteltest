@@ -3,14 +3,14 @@
 import os
 
 class Config(object):
-	API_ID=("")
+	API_ID = int("")
 	API_HASH=("")
 	BOT_TOKEN=("")
 	BOT_USERNAME=("")
-	DB_CHANNEL =("")
+	DB_CHANNEL =int("")
 	SHORTLINK_URL = os.environ.get('SHORTLINK_URL')
 	SHORTLINK_API = os.environ.get('SHORTLINK_API')
-	BOT_OWNER=("")
+	BOT_OWNER = int("")
 	DATABASE_URL=("")
 	UPDATES_CHANNEL=("")
 	LOG_CHANNEL=("")

@@ -3,10 +3,10 @@
 import os
 
 class Config(object):
-	API_ID = int(os.environ.get("API_ID", "0"))
-	API_HASH = os.environ.get("API_HASH")
-	BOT_TOKEN = os.environ.get("BOT_TOKEN")
-	BOT_USERNAME = os.environ.get("BOT_USERNAME")
+	API_ID=14516437
+	API_HASH=8e2d6c40aa1be21b67acd38fe29a07a4
+	BOT_TOKEN=6615320240:AAFhzK4zzqXph1b4IXbqfMyeVCOkDgNqZqI
+	BOT_USERNAME=iam_rokuRobot
 	DB_CHANNEL = int(os.environ.get("DB_CHANNEL", "-100"))
 	SHORTLINK_URL = os.environ.get('SHORTLINK_URL')
 	SHORTLINK_API = os.environ.get('SHORTLINK_API')

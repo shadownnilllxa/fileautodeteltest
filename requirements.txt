@@ -6,4 +6,3 @@ dnspython
 psutil
 render
 requests
-git+https://github.com/Salxchange/TG-FileStoreBot

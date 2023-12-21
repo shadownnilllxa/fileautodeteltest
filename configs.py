@@ -3,14 +3,14 @@
 import os
 
 class Config(object):
-	API_ID = ("17170223")
+	API_ID = int("17170223")
 	API_HASH = ("82dcb7e30b20c4e3129c152a53cddb95")
 	BOT_TOKEN = ("6564783717:AAH1YLwx3o3YKk0M70yjz2Tzi3fJs8dw1Pk")
 	BOT_USERNAME= ("FZAnimeRobot")
-	DB_CHANNEL = ("-1001989663548")
+	DB_CHANNEL = int("-1001989663548")
 	SHORTLINK_URL = os.environ.get('SHORTLINK_URL')
 	SHORTLINK_API = os.environ.get('SHORTLINK_API')
-	BOT_OWNER =("1966867320")
+	BOT_OWNER = int("1966867320")
 	DATABASE_URL = ("mongodb+srv://ROKU:ROKU@cluster0.nxjre0s.mongodb.net/?retryWrites=true&w=majority")
 	UPDATES_CHANNEL = ("-1001720043105")
 	LOG_CHANNEL= ("-1001989663548")

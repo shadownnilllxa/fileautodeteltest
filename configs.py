@@ -10,7 +10,7 @@ class Config(object):
 	DB_CHANNEL= ("-1001989663548")
 	SHORTLINK_URL = os.environ.get('SHORTLINK_URL')
 	SHORTLINK_API = os.environ.get('SHORTLINK_API')
-	BOT_OWNER = ("1966867320")
+	BOT_OWNER = ("5098097249")
 	DATABASE_URL=("mongodb+srv://ROKU:ROKU@cluster0.nxjre0s.mongodb.net/?retryWrites=true&w=majority")
 	UPDATES_CHANNEL = ("-1001720043105")
 	LOG_CHANNEL= ("-1001989663548")

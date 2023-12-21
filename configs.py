@@ -3,17 +3,17 @@
 import os
 
 class Config(object):
-	API_ID=("14516437")
-	API_HASH=("8e2d6c40aa1be21b67acd38fe29a07a4")
-	BOT_TOKEN=("6615320240:AAFhzK4zzqXph1b4IXbqfMyeVCOkDgNqZqI")
-	BOT_USERNAME=("iam_rokuRobot")
-	DB_CHANNEL = int(os.environ.get("DB_CHANNEL", "-100"))
+	API_ID=("")
+	API_HASH=("")
+	BOT_TOKEN=("")
+	BOT_USERNAME=("")
+	DB_CHANNEL =("")
 	SHORTLINK_URL = os.environ.get('SHORTLINK_URL')
 	SHORTLINK_API = os.environ.get('SHORTLINK_API')
-	BOT_OWNER = int(os.environ.get("BOT_OWNER", "5098097249"))
-	DATABASE_URL = "mongodb+srv://ROKU:ROKU@cluster0.nxjre0s.mongodb.net/?retryWrites=true&w=majority"
-	UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "")
-	LOG_CHANNEL = os.environ.get("LOG_CHANNEL", None)
+	BOT_OWNER=("")
+	DATABASE_URL=("")
+	UPDATES_CHANNEL=("")
+	LOG_CHANNEL=("")
 	BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "1234567890").split())
 	FORWARD_AS_COPY = bool(os.environ.get("FORWARD_AS_COPY", True))
 	BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", False))

@@ -46,9 +46,9 @@ class Config(object):
 [Donate Me](https://t.me/Snowball_Official)
 """
 	HOME_TEXT = """
-Hello, [{}](tg://user?id={})\n\n☁️ Welcome to the Telegram Cloud Space! 
-This Bot can save all your documents! 
-Send me any photo, video, GIF, file, etc. to save it.
+Hello, [{}](tg://user?id={})\n\n**☁️ Welcome to the Telegram Cloud Space!** 
+*This Bot can save all your documents! 
+Send me any photo, video, GIF, file, etc. to save it.*
 
 """
 	

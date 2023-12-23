@@ -50,7 +50,8 @@ async def save_batch_media_in_channel(bot: Client, editable: Message, message_id
             ]])
         )
         share_link =f"https://t.me/{Config.BOT_USERNAME}?start=PredatorHackerzZ_{str_to_b64(str(SaveMessage.id))}"
-    except editable.edit("**𝖲𝗍𝖺𝗋𝗍𝗂𝗇𝗀 𝖡𝗈𝗍**")
+    except editable.edit():
+    await editable.edit("**𝖲𝗍𝖺𝗋𝗍𝗂𝗇𝗀 𝖡𝗈𝗍**")
     await asyncio.sleep(2)
     await editable.edit("**♻️ 𝖫𝗈𝖺𝖽𝗂𝗇𝗀...**")
     await asyncio.sleep(2)    

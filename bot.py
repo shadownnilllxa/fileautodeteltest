@@ -464,7 +464,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                                ]))
 
     elif "addToBatchFalse" in cb_data:
-        await cmd.message.edit("𝘗𝘭𝘦𝘢𝘴𝘦 𝘞𝘢𝘪𝘵, 𝘚𝘢𝘷𝘪𝘯𝘨 𝘠𝘰𝘶𝘳 𝘍𝘪𝘭𝘦 𝘵𝘰 𝘵𝘩𝘦 𝘋𝘢𝘵𝘢𝘣𝘢𝘴𝘦 😊")
+        await cmd.message.edit("𝘗𝘭𝘦𝘢𝘴𝘦 𝘞𝘢𝘪𝘵, 𝘚𝘢𝘷𝘪𝘯𝘨 𝘠𝘰𝘶𝘳 𝘍𝘪𝘭𝘦 𝘵𝘰 𝘮𝘺 𝘋𝘢𝘵𝘢𝘣𝘢𝘴𝘦 😊")
         await asyncio.sleep(10)  
         await cmd.message.edit("𝘍𝘪𝘭𝘦 𝘜𝘱𝘭𝘰𝘢𝘥𝘦𝘥 𝘚𝘶𝘤𝘤𝘦𝘴𝘴𝘧𝘶𝘭𝘭𝘺 ✅")
         await asyncio.sleep(3)   
@@ -481,7 +481,7 @@ async def button(bot: Client, cmd: CallbackQuery):
         if message_ids is None:
             await cmd.answer("Batch List Empty!", show_alert=True)
             return
-        await cmd.message.edit("𝘗𝘭𝘦𝘢𝘴𝘦 𝘞𝘢𝘪𝘵, 𝘚𝘢𝘷𝘪𝘯𝘨 𝘠𝘰𝘶𝘳 𝘍𝘪𝘭𝘦 𝘵𝘰 𝘵𝘩𝘦 𝘋𝘢𝘵𝘢𝘣𝘢𝘴𝘦 😊")
+        await cmd.message.edit("𝘗𝘭𝘦𝘢𝘴𝘦 𝘞𝘢𝘪𝘵, 𝘚𝘢𝘷𝘪𝘯𝘨 𝘠𝘰𝘶𝘳 𝘍𝘪𝘭𝘦 𝘵𝘰 𝘮𝘺 𝘋𝘢𝘵𝘢𝘣𝘢𝘴𝘦 😊")
         await asyncio.sleep(10)  
         await cmd.message.edit("𝘍𝘪𝘭𝘦 𝘜𝘱𝘭𝘰𝘢𝘥𝘦𝘥 𝘚𝘶𝘤𝘤𝘦𝘴𝘴𝘧𝘶𝘭𝘭𝘺 ✅")
         await asyncio.sleep(3)   

@@ -316,12 +316,6 @@ async def _banned_users(_, m: Message):
     await m.reply_text(reply_text, True)
 
 
-@Bot.on_message(filters.private & filters.command("clear_batch"))
-async def clear_user_batch(bot: Client, m: Message):
-    MediaList[f"{str(m.from_user.id)}"] = []
-    await m.reply_text("Cleared your batch files successfully!")
-
-
 @Bot.on_callback_query()
 async def button(bot: Client, cmd: CallbackQuery):
 

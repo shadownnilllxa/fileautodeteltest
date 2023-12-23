@@ -111,7 +111,7 @@ async def start(bot: Client, cmd: Message):
             await cmd.reply_text(f"Something went wrong!\n\n**Error:** `{err}`")
 
 
-@Bot.on_message((filters.document | filters.video | filters.audio) & ~filters.chat(Config.DB_CHANNEL))
+@Bot.on_message((filters.document | filters.video | filters.audio | filters.photo) & ~filters.chat(Config.DB_CHANNEL))
 async def main(bot: Client, message: Message):
 
     if message.chat.type == enums.ChatType.PRIVATE:
@@ -472,8 +472,12 @@ async def button(bot: Client, cmd: CallbackQuery):
             await cmd.answer("Batch List Empty!", show_alert=True)
             return
         await cmd.message.edit("Please Wait, Saving Your File to the Cloud")
-        await asyncio.sleep(2)   
+        await asyncio.sleep(4)   
         await cmd.message.edit("file Saved Successfully")
+        await asyncio.sleep(4)   
+        await cmd.message.edit("Generating Access Link")
+        await asyncio.sleep(4)   
+        await cmd.message.edit("Access Link Generated Successfully ✅")
         await save_batch_media_in_channel(bot=bot, editable=cmd.message, message_ids=message_ids)
         MediaList[f"{str(cmd.from_user.id)}"] = []
 

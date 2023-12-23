@@ -74,16 +74,16 @@ async def start(bot: Client, cmd: Message):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("𝖬𝖺𝗂𝗇 𝖢𝗁𝖺𝗇𝗇𝖾𝗅", url="https://t.me/silvervoidmovie")
+                        InlineKeyboardButton("", url="https://t.me/silvervoidmovie")
                     ],
                     [
-                        InlineKeyboardButton("", callback_data="aboutbot"),
-                        InlineKeyboardButton("", callback_data="aboutdevs"),
-                        InlineKeyboardButton("", callback_data="closeMessage")
+                        InlineKeyboardButton("𝖬𝖺𝗂𝗇 𝖢𝗁𝖺𝗇𝗇𝖾𝗅", callback_data="aboutbot"),
+                        InlineKeyboardButton("𝖲𝗎𝗉𝗉𝗈𝗋𝗍 𝖦𝗋𝗈𝗎𝗉", url="https://t.me/Team_Roku"),
+                        InlineKeyboardButton("", callback_data="aboutbot")
                     ],
                     [
-                        InlineKeyboardButton("𝖡𝗈𝗍𝗌 𝖢𝗁𝖺𝗇𝗇𝖾𝗅", url="https://t.me/Rokubotz"),
-                        InlineKeyboardButton(" 𝖲𝗎𝗉𝗉𝗈𝗋𝗍 𝖦𝗋𝗈𝗎𝗉", url="https://t.me/Team_Roku")
+                        InlineKeyboardButton("", url="https://t.me/Rokubotz"),
+                        InlineKeyboardButton("𝖠𝖻𝗈𝗎𝗍", callback_data="aboutbot")
                     ]
                 ]
             )
@@ -132,10 +132,10 @@ async def main(bot: Client, message: Message):
             return
 
         await message.reply_text(
-            text="**Choose an option from below:**",
+            text="**𝖯𝗈𝗐𝖾𝗋𝖾𝖽 𝖡𝗒 <a href= https://t.me/Rokubotz>𝖱𝗈𝗄𝗎𝖻𝗈𝗍𝗓</a>**",
             reply_markup=InlineKeyboardMarkup([
-                [InlineKeyboardButton("Save in Batch", callback_data="addToBatchTrue")],
-                [InlineKeyboardButton("Get Sharable Link", callback_data="addToBatchFalse")]
+                [InlineKeyboardButton("𝖴𝗉𝗅𝗈𝖺𝖽 ☁️", callback_data="addToBatchTrue")],
+                [InlineKeyboardButton("", callback_data="addToBatchFalse")]
             ]),
             quote=True,
             disable_web_page_preview=True
@@ -333,12 +333,12 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Source Codes of Bot",
+                        InlineKeyboardButton("",
                                              url="https://t.me/Team_Roku")
                     ],
                     [
-                        InlineKeyboardButton("Go Home", callback_data="gotohome"),
-                        InlineKeyboardButton("About Dev", callback_data="aboutdevs")
+                        InlineKeyboardButton("𝖬𝖺𝗂𝗇 𝖢𝗁𝖺𝗇𝗇𝖾𝗅", url="https://t.me/Rokubotz"),
+                        InlineKeyboardButton("𝖲𝗎𝗉𝗉𝗈𝗋𝗍 𝖦𝗋𝗈𝗎𝗉", url="https://t.me/Team_Roku")
                     ]
                 ]
             )
@@ -457,10 +457,10 @@ async def button(bot: Client, cmd: CallbackQuery):
         file_id = cmd.message.reply_to_message.id
         MediaList[f"{str(cmd.from_user.id)}"].append(file_id)
         await cmd.message.edit("File Saved in Batch!\n\n"
-                               "Press below button to get batch link.",
+                               "𝖠𝗋𝖾 𝖸𝗈𝗎 𝖲𝗎𝗋𝖾 𝖸𝗈𝗎 𝖶𝖺𝗇𝗍 𝖳𝗈 𝖴𝗉𝗅𝗈𝖺𝖽",
                                reply_markup=InlineKeyboardMarkup([
-                                   [InlineKeyboardButton("Get Batch Link", callback_data="getBatchLink")],
-                                   [InlineKeyboardButton("Close Message", callback_data="closeMessage")]
+                                   [InlineKeyboardButton("𝖴𝗉𝗅𝗈𝖺𝖽 ☁️", callback_data="getBatchLink")],
+                                   [InlineKeyboardButton("𝖢𝖺𝗇𝖼𝖾𝗅 ❌", callback_data="closeMessage")]
                                ]))
 
     elif "addToBatchFalse" in cb_data:

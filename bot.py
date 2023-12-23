@@ -337,8 +337,8 @@ async def button(bot: Client, cmd: CallbackQuery):
                                              url="https://t.me/Rokubotz")
                     ],
                     [
-                        InlineKeyboardButton("𝖲𝗎𝗉𝗉𝗈𝗋𝗍 𝖦𝗋𝗈𝗎𝗉", url="https://t.me/Team_Roku"),
-                        InlineKeyboardButton("𝖡𝖺𝖼𝗄", callback_data="gotohome")
+                        InlineKeyboardButton("𝖡𝖺𝖼𝗄", callback_data="gotohome"),
+                        InlineKeyboardButton("𝖲𝗎𝗉𝗉𝗈𝗋𝗍 𝖦𝗋𝗈𝗎𝗉", url="https://t.me/Team_Roku")
                     ]
                 ]
             )
@@ -377,7 +377,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                         InlineKeyboardButton("", callback_data="closeMessage")
                     ],
                     [
-                        InlineKeyboardButton("𝖠𝖻𝗈𝗎𝗍", url="https://t.me/Team_Roku"),
+                        InlineKeyboardButton("𝖠𝖻𝗈𝗎𝗍", callback_data="aboutbot"),
                         InlineKeyboardButton("", callback_data="aboutbot")
                     ]
                 ]
@@ -430,8 +430,8 @@ async def button(bot: Client, cmd: CallbackQuery):
                         InlineKeyboardButton("𝖡𝗈𝗍𝗌 𝖢𝗁𝖺𝗇𝗇𝖾𝗅", url="https://t.me/Team_Roku")
                     ],
                     [
-                        InlineKeyboardButton("About Bot", callback_data="aboutbot"),
-                        InlineKeyboardButton("About Dev", callback_data="aboutdevs")
+                        InlineKeyboardButton("", callback_data="aboutbot"),
+                        InlineKeyboardButton("", callback_data="aboutdevs")
                     ]
                 ]
             )
@@ -456,7 +456,7 @@ async def button(bot: Client, cmd: CallbackQuery):
             MediaList[f"{str(cmd.from_user.id)}"] = []
         file_id = cmd.message.reply_to_message.id
         MediaList[f"{str(cmd.from_user.id)}"].append(file_id)
-        await cmd.message.edit("File Saved in Batch!\n\n"
+        await cmd.message.edit("𝖶𝖺𝗋𝗇𝗂𝗇𝗀 ⚠️\n\n"
                                "𝖠𝗋𝖾 𝖸𝗈𝗎 𝖲𝗎𝗋𝖾 𝖸𝗈𝗎 𝖶𝖺𝗇𝗍 𝖳𝗈 𝖴𝗉𝗅𝗈𝖺𝖽",
                                reply_markup=InlineKeyboardMarkup([
                                    [InlineKeyboardButton("𝖴𝗉𝗅𝗈𝖺𝖽 ☁️", callback_data="getBatchLink")],

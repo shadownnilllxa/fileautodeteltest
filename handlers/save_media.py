@@ -17,7 +17,7 @@ async def forward_to_channel(bot: Client, message: Message, editable: Message):
         __SENT = await message.forward(Config.DB_CHANNEL)
         return __SENT
     except FloodWait as sl:
-        if sl.value > 3:
+        if sl.value > 45:
             await asyncio.sleep(sl.value)
             await bot.send_message(
                 chat_id=int(Config.LOG_CHANNEL),
@@ -100,7 +100,7 @@ async def save_media_in_channel(bot: Client, editable: Message, message: Message
             disable_web_page_preview=True
         )
     except FloodWait as sl:
-        if sl.value > 3:
+        if sl.value > 45:
             print(f"Sleep of {sl.value}s caused by FloodWait ...")
             await asyncio.sleep(sl.value)
             await bot.send_message(

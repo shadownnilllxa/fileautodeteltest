@@ -50,12 +50,14 @@ async def save_batch_media_in_channel(bot: Client, editable: Message, message_id
             ]])
         )
         share_link =f"https://t.me/{Config.BOT_USERNAME}?start=PredatorHackerzZ_{str_to_b64(str(SaveMessage.id))}"
-        await editable.edit(
-        editable.edit("**𝖲𝗍𝖺𝗋𝗍𝗂𝗇𝗀 𝖡𝗈𝗍**"
-        asyncio.sleep(2),
-       editable.edit("**♻️ 𝖫𝗈𝖺𝖽𝗂𝗇𝗀...**"
-       asyncio.sleep(2    
-        editable.delete(
+        await(
+        editable.edit("**𝖲𝗍𝖺𝗋𝗍𝗂𝗇𝗀 𝖡𝗈𝗍**",
+        asyncio.sleep(2,
+       editable.edit("**♻️ 𝖫𝗈𝖺𝖽𝗂𝗇𝗀...**",
+       asyncio.sleep(2,    
+        editable.delete
+                    )            
+        await.editable.edit(
             f"**Batch Files Stored in my Database!**\n\nHere is the Permanent Link of your files: <a href={share_link}>Link</a>\n\n"
             f"Just Click the link to get your files!",
             reply_markup=InlineKeyboardMarkup(

@@ -26,7 +26,7 @@ async def reply_forward(message: Message, file_id: int):
                     ],
                     [
                         InlineKeyboardButton("𝖠𝗇𝗂𝗆𝖾 𝖢𝗁𝖺𝗇𝗇𝖾𝗅", url="https://t.me/Low_Mb_Zone"),
-                        InlineKeyboardButton(""𝖮𝗇𝗀𝗈𝗂𝗇𝗀 𝖠𝗇𝗂𝗆𝖾, url="https://t.me/Dr_Stone_New_World_English_Dub"),
+                        InlineKeyboardButton("𝖮𝗇𝗀𝗈𝗂𝗇𝗀 𝖠𝗇𝗂𝗆𝖾", url="https://t.me/Dr_Stone_New_World_English_Dub"),
                         InlineKeyboardButton("", callback_data="closeMessage")
                     ],
                     [

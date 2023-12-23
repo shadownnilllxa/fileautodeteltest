@@ -12,7 +12,7 @@ class Config(object):
 	SHORTLINK_API = os.environ.get('SHORTLINK_API')
 	BOT_OWNER = int("5098097249")
 	DATABASE_URL=("mongodb+srv://ROKU:ROKU@cluster0.nxjre0s.mongodb.net/?retryWrites=true&w=majority")
-	UPDATES_CHANNEL=("-1001175626344")
+	UPDATES_CHANNEL=("-1001972455347")
 	LOG_CHANNEL=("-1001175626344")
 	BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "1234567890").split())
 	FORWARD_AS_COPY = bool(os.environ.get("FORWARD_AS_COPY", True))
@@ -20,7 +20,7 @@ class Config(object):
 	BANNED_CHAT_IDS = list(set(int(x) for x in os.environ.get("BANNED_CHAT_IDS", "-1001362659779 -1001255795497").split()))
 	OTHER_USERS_CAN_SAVE_FILE = bool(os.environ.get("OTHER_USERS_CAN_SAVE_FILE", True))
 	ABOUT_BOT_TEXT = f"""
-╭────[ **🔅𝖳𝖾𝗅𝖾𝗀𝗋𝖺𝗆𝖢𝗅𝗈𝗎𝖽𝖡𝗈𝗍🔅**]────⍟
+╭────[ **🔅𝖳𝖾𝗅𝖾𝗀𝗋𝖺𝗆𝖢𝗅𝗈𝗎𝖽𝖡𝗈𝗍🔅**]
 │
 ├🔸 **𝖬𝗒 𝖭𝖺𝗆𝖾:** [𝖳𝖾𝗅𝖾𝗀𝗋𝖺𝗆 𝖢𝗅𝗈𝗎𝖽 𝖡𝗈𝗍](https://t.me/{BOT_USERNAME})
 │

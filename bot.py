@@ -135,7 +135,7 @@ async def main(bot: Client, message: Message):
             text="**𝖯𝗈𝗐𝖾𝗋𝖾𝖽 𝖡𝗒 <a href= https://t.me/Rokubotz>𝖱𝗈𝗄𝗎𝖻𝗈𝗍𝗓</a>**",
             reply_markup=InlineKeyboardMarkup([
                 [InlineKeyboardButton("", callback_data="addToBatchTrue")],
-                [InlineKeyboardButton("𝖴𝗉𝗅𝗈𝖺𝖽 ☁️", callback_data="addToBatch")]
+                [InlineKeyboardButton("𝖴𝗉𝗅𝗈𝖺𝖽 ☁️", callback_data="getBatchLink")]
             ]),
             quote=True,
             disable_web_page_preview=True

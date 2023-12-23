@@ -369,7 +369,7 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("𝖬𝖺𝗂𝗇 𝖢𝗁𝖺𝗇𝗇𝖾𝗅", url="https://t.me/silvervoidmovie")
+                        InlineKeyboardButton("𝖬𝖺𝗂𝗇 𝖢𝗁𝖺𝗇𝗇𝖾𝗅", url="https://t.me/Rokubotz")
                     ],
                     [
                         InlineKeyboardButton("About Bot", callback_data="aboutbot"),
@@ -378,7 +378,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                     ],
                     [
                         InlineKeyboardButton("𝖲𝗎𝗉𝗉𝗈𝗋𝗍 𝖦𝗋𝗈𝗎𝗉", url="https://t.me/Team_Roku"),
-                        InlineKeyboardButton("𝖡𝗈𝗍𝗌 𝖢𝗁𝖺𝗇𝗇𝖾𝗅", url="https://t.me/Rokubotz")
+                        InlineKeyboardButton("", url="https://t.me/Rokubotz")
                     ]
                 ]
             )
@@ -471,13 +471,16 @@ async def button(bot: Client, cmd: CallbackQuery):
         if message_ids is None:
             await cmd.answer("Batch List Empty!", show_alert=True)
             return
-        await cmd.message.edit("Please Wait, Saving Your File to the Cloud")
-        await asyncio.sleep(4)   
-        await cmd.message.edit("file Saved Successfully")
-        await asyncio.sleep(4)   
-        await cmd.message.edit("Generating Access Link")
-        await asyncio.sleep(4)   
-        await cmd.message.edit("Access Link Generated Successfully ✅")
+        await cmd.message.edit("𝘗𝘭𝘦𝘢𝘴𝘦 𝘞𝘢𝘪𝘵, 𝘚𝘢𝘷𝘪𝘯𝘨 𝘠𝘰𝘶𝘳 𝘍𝘪𝘭𝘦 𝘵𝘰 𝘵𝘩𝘦 𝘋𝘢𝘵𝘢𝘣𝘢𝘴𝘦 😊")
+        await asyncio.sleep(10)  
+        await cmd.message.edit("𝘍𝘪𝘭𝘦 𝘜𝘱𝘭𝘰𝘢𝘥𝘦𝘥 𝘚𝘶𝘤𝘤𝘦𝘴𝘴𝘧𝘶𝘭𝘭𝘺 ✅")
+        await asyncio.sleep(10)   
+        await cmd.message.edit("𝖭𝗈𝗐 𝖦𝖾𝗇𝖾𝗋𝖺𝗍𝗂𝗇𝗀 𝖠𝖼𝖼𝖾𝗌𝗌 𝖫𝗂𝗇𝗄....")
+        await asyncio.sleep(10)   
+        await cmd.message.edit("𝖠𝖼𝖼𝖾𝗌𝗌 𝖫𝗂𝗇𝗄 𝖦𝖾𝗇𝖾𝗋𝖺𝗍𝖾𝖽 𝖲𝗎𝖼𝖼𝖾𝗌𝗌𝖿𝗎𝗅𝗅𝗒 ✅")
+        await asyncio.sleep(10)   
+        await cmd.message.edit("𝘕𝘰𝘸 𝘚𝘦𝘯𝘥𝘪𝘯𝘨 𝘓𝘪𝘯𝘬 🖇️ .....")
+        await asyncio.sleep(10)
         await save_batch_media_in_channel(bot=bot, editable=cmd.message, message_ids=message_ids)
         MediaList[f"{str(cmd.from_user.id)}"] = []
 

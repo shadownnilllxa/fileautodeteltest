@@ -2,6 +2,7 @@
 
 import asyncio
 from configs import Config
+from handlers.helpers import save_msg.py
 from pyrogram import Client
 from pyrogram.types import (
     Message,
@@ -92,7 +93,7 @@ async def save_media_in_channel(bot: Client, editable: Message, message: Message
             f"**𝖥𝗂𝗅𝖾 𝖲𝗍𝗈𝗋𝖾𝖽 𝖲𝗎𝖼𝖼𝖾𝗌𝗌𝖿𝗎𝗅𝗅𝗒 𝖨𝗇 𝖬𝗒 𝖣𝖺𝗍𝖺𝖻𝖺𝗌𝖾**\n\n➜ <a href={share_link}>𝖠𝖼𝖼𝖾𝗌𝗌 𝖫𝗂𝗇𝗄</a>\n\n"
             f"𝖯𝗈𝗐𝖾𝗋𝖾𝖽 𝖡𝗒 <a href=https://t.me/Rokubotz>𝖱𝗈𝗄𝗎𝖻𝗈𝗍𝗓</a>",
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton("", url=share_link)],
+                [[InlineKeyboardButton("Save Message", callback_data=save)],
                  [InlineKeyboardButton("𝖬𝖺𝗂𝗇 𝖢𝗁𝖺𝗇𝗇𝖾𝗅", url="https://t.me/Rokubotz"),
                   InlineKeyboardButton("𝖲𝗎𝗉𝗉𝗈𝗋𝗍 𝖦𝗋𝗈𝗎𝗉", url="https://t.me/Team_Roku")]]
             ),

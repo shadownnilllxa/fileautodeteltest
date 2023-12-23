@@ -135,7 +135,7 @@ async def main(bot: Client, message: Message):
             text="**𝖯𝗈𝗐𝖾𝗋𝖾𝖽 𝖡𝗒 <a href= https://t.me/Rokubotz>𝖱𝗈𝗄𝗎𝖻𝗈𝗍𝗓</a>**",
             reply_markup=InlineKeyboardMarkup([
                 [InlineKeyboardButton("", callback_data="addToBatchTrue")],
-                [InlineKeyboardButton("𝖴𝗉𝗅𝗈𝖺𝖽 ☁️", callback_data="getBatchLink")]
+                [InlineKeyboardButton("𝖴𝗉𝗅𝗈𝖺𝖽 ☁️", callback_data="aboutdevs")]
             ]),
             quote=True,
             disable_web_page_preview=True
@@ -351,12 +351,12 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Source Codes of Bot",
+                        InlineKeyboardButton("",
                                              url="https://t.me/Team_Roku")
                     ],
                     [
-                        InlineKeyboardButton("About Bot", callback_data="aboutbot"),
-                        InlineKeyboardButton("Go Home", callback_data="gotohome")
+                        InlineKeyboardButton("", callback_data="addToBatchFalse"),
+                        InlineKeyboardButton("", callback_data="gotohome")
                     ]
                 ]
             )

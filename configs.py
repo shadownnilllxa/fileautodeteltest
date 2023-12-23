@@ -47,8 +47,8 @@ class Config(object):
 """
 	HOME_TEXT = """
 Hello, [{}](tg://user?id={})\n\n**☁️ Welcome to the Telegram Cloud Space!** 
-*This Bot can save all your documents! 
-Send me any photo, video, GIF, file, etc. to save it.*
+This Bot can save all your documents! 
+Send me any photo, video, GIF, file, etc. to save it.
 
 """
 	

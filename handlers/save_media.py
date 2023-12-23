@@ -49,7 +49,6 @@ async def save_batch_media_in_channel(bot: Client, editable: Message, message_id
                 InlineKeyboardButton("Delete Batch", callback_data="closeMessage")
             ]])
         )
- except Exception as err:
     await editable.edit(f"**𝖲𝗍𝖺𝗋𝗍𝗂𝗇𝗀 𝖡𝗈𝗍**")
     await asyncio.sleep(2)
     await editable.edit(f"**♻️ 𝖫𝗈𝖺𝖽𝗂𝗇𝗀...**")

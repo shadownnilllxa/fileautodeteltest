@@ -134,8 +134,8 @@ async def main(bot: Client, message: Message):
         await message.reply_text(
             text="**𝖯𝗈𝗐𝖾𝗋𝖾𝖽 𝖡𝗒 <a href= https://t.me/Rokubotz>𝖱𝗈𝗄𝗎𝖻𝗈𝗍𝗓</a>**",
             reply_markup=InlineKeyboardMarkup([
-                [InlineKeyboardButton("𝖴𝗉𝗅𝗈𝖺𝖽 ☁️", callback_data="addToBatchTrue")],
-                [InlineKeyboardButton("", callback_data="addToBatchFalse")]
+                [InlineKeyboardButton("", callback_data="addToBatchTrue")],
+                [InlineKeyboardButton("𝖴𝗉𝗅𝗈𝖺𝖽 ☁️", callback_data="addToBatchFalse")]
             ]),
             quote=True,
             disable_web_page_preview=True
@@ -459,11 +459,21 @@ async def button(bot: Client, cmd: CallbackQuery):
         await cmd.message.edit("𝖶𝖺𝗋𝗇𝗂𝗇𝗀 ⚠️\n\n"
                                "𝖠𝗋𝖾 𝖸𝗈𝗎 𝖲𝗎𝗋𝖾 𝖸𝗈𝗎 𝖶𝖺𝗇𝗍 𝖳𝗈 𝖴𝗉𝗅𝗈𝖺𝖽",
                                reply_markup=InlineKeyboardMarkup([
-                                   [InlineKeyboardButton("𝖴𝗉𝗅𝗈𝖺𝖽 ☁️", callback_data="getBatchLink")],
+                                   [InlineKeyboardButton("𝖴𝗉𝗅𝗈𝖺𝖽 ☁️", callback_data="addToBatchFalse")],
                                    [InlineKeyboardButton("𝖢𝖺𝗇𝖼𝖾𝗅 ❌", callback_data="closeMessage")]
                                ]))
 
     elif "addToBatchFalse" in cb_data:
+        await cmd.message.edit("𝘗𝘭𝘦𝘢𝘴𝘦 𝘞𝘢𝘪𝘵, 𝘚𝘢𝘷𝘪𝘯𝘨 𝘠𝘰𝘶𝘳 𝘍𝘪𝘭𝘦 𝘵𝘰 𝘵𝘩𝘦 𝘋𝘢𝘵𝘢𝘣𝘢𝘴𝘦 😊")
+        await asyncio.sleep(10)  
+        await cmd.message.edit("𝘍𝘪𝘭𝘦 𝘜𝘱𝘭𝘰𝘢𝘥𝘦𝘥 𝘚𝘶𝘤𝘤𝘦𝘴𝘴𝘧𝘶𝘭𝘭𝘺 ✅")
+        await asyncio.sleep(3)   
+        await cmd.message.edit("𝖭𝗈𝗐 𝖦𝖾𝗇𝖾𝗋𝖺𝗍𝗂𝗇𝗀 𝖠𝖼𝖼𝖾𝗌𝗌 𝖫𝗂𝗇𝗄....")
+        await asyncio.sleep(4)   
+        await cmd.message.edit("𝖠𝖼𝖼𝖾𝗌𝗌 𝖫𝗂𝗇𝗄 𝖦𝖾𝗇𝖾𝗋𝖺𝗍𝖾𝖽 𝖲𝗎𝖼𝖼𝖾𝗌𝗌𝖿𝗎𝗅𝗅𝗒 ✅")
+        await asyncio.sleep(7)   
+        await cmd.message.edit("𝗇𝗈𝗐 𝗌𝖾𝗇𝖽𝗂𝗇𝗀 𝗅𝗂𝗇𝗄.....")
+        await asyncio.sleep(5)
         await save_media_in_channel(bot, editable=cmd.message, message=cmd.message.reply_to_message)
 
     elif "getBatchLink" in cb_data:

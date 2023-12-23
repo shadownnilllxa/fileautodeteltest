@@ -338,7 +338,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                     ],
                     [
                         InlineKeyboardButton("𝖲𝗎𝗉𝗉𝗈𝗋𝗍 𝖦𝗋𝗈𝗎𝗉", url="https://t.me/Team_Roku"),
-                        InlineKeyboardButton("𝖡𝖺𝖼𝗄, callback_data="gotohome")
+                        InlineKeyboardButton("𝖡𝖺𝖼𝗄", callback_data="gotohome")
                     ]
                 ]
             )

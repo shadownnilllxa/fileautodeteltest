@@ -490,7 +490,7 @@ async def button(bot: Client, cmd: CallbackQuery):
       await asyncio.sleep(2)
       await cmd.message.edit("**File Uploaded Successfully ✅**")
       await asyncio.sleep(3)   
-      await cmd.message.edit("𝖭𝗈𝗐 𝖦𝖾𝗇𝖾𝗋𝖺𝗍𝗂𝗇𝗀 𝖠𝖼𝖼𝖾𝗌𝗌 𝖫𝗂𝗇𝗄....")
+      await cmd.message.edit("**𝘎𝘦𝘯𝘦𝘳𝘢𝘵𝘪𝘯𝘨 𝘈𝘤𝘤𝘦𝘴𝘴 𝘓𝘪𝘯𝘬...**")
       await asyncio.sleep(4)   
       await cmd.message.edit("**Access Link Generated Successfully ✅**")
       await asyncio.sleep(3)   

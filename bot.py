@@ -461,7 +461,7 @@ async def button(bot: Client, cmd: CallbackQuery):
     elif "addToBatchFalse" in cb_data:
         
       await cmd.message.edit("𝘗𝘭𝘦𝘢𝘴𝘦 𝘞𝘢𝘪𝘵... 𝘚𝘢𝘷𝘪𝘯𝘨 𝘠𝘰𝘶𝘳 𝘍𝘪𝘭𝘦 𝘵𝘰 𝘮𝘺 𝘋𝘢𝘵𝘢𝘣𝘢𝘴𝘦 😊")
-      await asyncio.sleep(2)
+      await asyncio.sleep(1)
       await cmd.message.edit("📤 𝖴𝗉𝗅𝗈𝖺𝖽𝗂𝗇𝗀\n\n○○○○○○○○○○○○ **0.00%**")
       await asyncio.sleep(2)
       await cmd.message.edit("📤 𝖴𝗉𝗅𝗈𝖺𝖽𝗂𝗇𝗀\n\n●○○○○○○○○○○○ **3.74%**")

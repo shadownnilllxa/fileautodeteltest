@@ -458,10 +458,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                                ]))
         
         
-     elif "addToBatchFalse" in cb_data:
-           await cmd.message.edit("𝘗𝘭𝘦𝘢𝘴𝘦 𝘞𝘢𝘪𝘵... 𝘚𝘢𝘷𝘪𝘯𝘨 𝘠𝘰𝘶𝘳 𝘍𝘪𝘭𝘦 𝘵𝘰 𝘮𝘺 𝘋𝘢𝘵𝘢𝘣𝘢𝘴𝘦 😊")
-            await asyncio.sleep(2)  
-            await cmd.message.edit("📤 𝖴𝗉𝗅𝗈𝖺𝖽𝗂𝗇𝗀\n\n○○○○○○○○○○○○")
+    elif "addToBatchFalse" in cb_data:
       await save_media_in_channel(bot, editable=cmd.message, message=cmd.message.reply_to_message)
    
     elif "getBatchLink" in cb_data:

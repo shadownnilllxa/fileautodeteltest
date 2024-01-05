@@ -12,7 +12,7 @@ class Config(object):
 	SHORTLINK_API = os.environ.get('SHORTLINK_API')
 	BOT_OWNER = int("6705973489")
 	DATABASE_URL=("mongodb+srv://ROKU:ROKU@cluster0.nxjre0s.mongodb.net/?retryWrites=true&w=majority")
-	UPDATES_CHANNEL=("-1002107653098")
+	UPDATES_CHANNEL=("-1001278639314")
 	LOG_CHANNEL=("-1001941319109")
 	BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "1234567890").split())
 	FORWARD_AS_COPY = bool(os.environ.get("FORWARD_AS_COPY", True))
